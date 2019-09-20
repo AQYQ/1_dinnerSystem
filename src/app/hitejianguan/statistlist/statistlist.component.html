@@ -1,0 +1,19 @@
+<app-navpc></app-navpc>
+<div class="statistic_apply">
+        <div class="statistic_content">
+            <div class="statistic_table">
+                <div class="statistic_title">
+                    <span>时间</span>
+                    <span>加班人数</span>
+                    <span>是否已确认</span>
+                </div>
+                <ul class="statistic_content"  >
+                    <li *ngFor="let n of alldata, let i = index" (click)="onClickDetail(n.o_time)">
+                        <span>{{n.o_time * 1000 | date:'yyyy-MM-dd'}}</span>
+                        <span>{{n.number}}</span>
+                        <span>{{n.isconfirm == '1' ? '已确认' : '未确认'}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>

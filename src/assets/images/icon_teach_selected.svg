@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/导航/icon_教学</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.5,10 L7.5,12.5 C7.5,12.7761424 7.27614237,13 7,13 C6.72385763,13 6.5,12.7761424 6.5,12.5 L6.5,10 L2,10 C1.44771525,10 1,9.55228475 1,9 L1,2 L0.5,2 C0.223857625,2 -2.22010787e-13,1.77614237 -2.22044605e-13,1.5 C-2.22078423e-13,1.22385763 0.223857625,1 0.5,1 L13.5,1 C13.7761424,1 14,1.22385763 14,1.5 C14,1.77614237 13.7761424,2 13.5,2 L13,2 L13,9 C13,9.55228475 12.5522847,10 12,10 L7.5,10 Z M2,2 L2,9 L12,9 L12,2 L2,2 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/导航/icon_教学" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#666666" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="颜色/主题色" mask="url(#mask-2)" fill="#3C96FF" fill-rule="nonzero">
+            <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+        </g>
+    </g>
+</svg>

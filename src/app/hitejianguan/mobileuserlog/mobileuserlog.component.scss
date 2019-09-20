@@ -1,0 +1,166 @@
+@import '../../../base.scss';
+
+.userLog{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    
+    .titleHeader{
+        font-size: 24px;
+        // height: pxtoremY(100);
+        padding: 20px 0;
+        box-sizing: border-box;
+        font-weight: 800;
+        text-align: center;
+        .header1{
+            // line-height: pxtoremY(60);
+            margin-bottom: 20px;
+        }
+    }
+
+    .inputBox{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30px;
+        font-size: 18px;
+        .userName{
+            margin-bottom: 10px;
+        }
+        .userName, .password{
+            width: 100%;
+            height: 46px;
+            // line-height: 46px;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            span{
+                display: inline-block;
+                min-width: 90px;
+                color: #0c0c0c;
+                font-size: 24px;
+            }
+            input{
+                // width:  calc(100% - #{90px});
+                width: 100%;
+                height: 70%;
+                outline: none;
+                text-indent: 16px;
+                font-size: 18px;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+
+    .storageWord.green{
+        color: #248BD7;
+    }
+    .storageWord{
+        padding-left: 15%; 
+        padding: 30px 0 0 10%;
+        font-size: 18px;
+        .storageImg{
+            margin-right: pxtoremY(20);
+        }
+        
+    }
+
+    .btnBox{
+        text-align: center;
+        margin-top: 30px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .goLoginBtn{
+        color: #fff;
+        background-color: #248BD7;
+        border-color: #248BD7;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+        display: inline-block;
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+// 修改密码
+.amendWord.userLog{
+     .titleHeader .header1{
+        margin-bottom: 0;
+    }
+}
+
+// .userLog{
+//     width: 100%;
+//     height: 100%;
+//     background-color: #ccc;
+    
+//     .titleHeader{
+//         font-size: pxtoremY(60);
+//         // height: pxtoremY(100);
+//         padding: pxtoremY(20) 0;
+//         box-sizing: border-box;
+//         font-weight: 800;
+//         text-align: center;
+//         .header1{
+//             line-height: pxtoremY(60);
+//         }
+//     }
+
+//     .inputBox{
+//         width: 70%;
+//         margin-left: 15%;
+//         margin-top:  pxtoremY(60);
+//         font-size: pxtoremY(30);
+//         .userName, .password{
+//             margin-bottom: pxtoremY(30);
+//             width: 100%;
+//             height: pxtoremY(60);
+//             line-height: pxtoremY(60);
+//             span{
+//                 display: inline-block;
+//                 width: pxtoremY(90);
+//                 color: rgb(12, 12, 12);
+//                 font-size: pxtoremY(30);
+//             }
+//             input{
+//                 width:  calc(100% - #{pxtoremY(90)});
+//                 outline: none;
+//                 text-indent: pxtoremY(10);
+//             }
+//         }
+//     }
+
+//     .storageWord{
+//         padding-left: 15%; 
+//         .storageImg{
+//             margin-right: pxtoremY(20);
+//         }
+//     }
+
+//     .btnBox{
+//         text-align: center;
+//         width: 70%;
+//         margin-left: 15%;
+//         margin-top: pxtoremY(30);
+//     }
+
+//     .goLoginBtn{
+//         color: #fff;
+//         background-color: #1890ff;
+//         border-color: #1890ff;
+//         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+//         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+//         display: inline-block;
+//         width: 100%;
+//         height: pxtoremY(50);
+//         line-height: pxtoremY(50);
+//         border-radius: pxtoremY(4);
+//         font-size: pxtoremY(40);
+//         cursor: pointer;
+//     }
+// }

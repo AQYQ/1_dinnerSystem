@@ -1,0 +1,48 @@
+<div class="userLog" *ngIf="!isAmendWord" >
+    <div class="titleHeader">
+        <div class="header1">教育BG研发中心</div>
+        <div class="header2">加班管理系统</div>
+    </div>
+
+    <div class="inputBox">
+        <div class="userName">
+            <input type="text" [(ngModel)]="userName" placeholder="请输入手机号">
+        </div>
+        <div class="password">
+            <input type="password" [(ngModel)]="userPassword" placeholder="请输入密码">
+        </div>
+    </div>
+
+    <div class="storageWord green" (click)="clickStrWord()">
+        <span class="storageImg"><i nz-icon [nzType]="'check-circle'"></i></span>
+        <span class="storageTxt">记住密码</span>
+    </div>
+
+    <div class="btnBox">
+        <!-- <button nz-button nzType="primary" nzBlock (click)="goLogin()">登录</button> -->
+        <span class="goLoginBtn" (click)="goLogin()">登录</span>
+    </div>
+</div>
+
+<div class="userLog amendWord" *ngIf="isAmendWord">
+    <div class="titleHeader">
+        <div class="header1">修改密码</div>
+    </div>
+
+    <div class="inputBox">
+        <div class="userName">
+            <input type="text" [(ngModel)]="oldPassword" placeholder="请输入原密码">
+        </div>
+        <div class="password">
+            <input type="text" [(ngModel)]="newPassword" placeholder="请输入新密码">
+        </div>
+    </div>
+
+    <div class="btnBox">
+        <span class="goLoginBtn" (click)="goBackList()">返回</span>
+    </div>
+    <div class="btnBox">
+        <span class="goLoginBtn" (click)="amendWord()">确认修改</span>
+    </div>
+</div>
+

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>加班管理系统</title>
+  <base href="./">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="text/javascript" src="./assets/js/jquery/3.3.1/jquery.js"></script>
+  <!-- <script type="text/javascript" src="./assets/js/jquery.qrcode.min.js"></script> -->
+  <script type="text/javascript" src="./assets/js/qrious.min.js"></script>
+  <script src="./assets/js/cos-js-sdk-v5.min.js"></script>
+  <style>
+    html,
+    body {
+      -ms-touch-action: none;
+      /* IE10 */
+      touch-action: none;
+      /* IE11 */
+      overflow: hidden;
+      -ms-content-zooming: none;
+    }
+  </style>
+</head>
+
+<body>
+  <app-root></app-root>
+  <script type="text/javascript">
+    document.oncontextmenu = function () {
+      return false;
+    }
+    window.onload = function () {
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      })
+
+      var lastTouchEnd = 0;
+      document.addEventListener('touchend', function (event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, false)
+      function handleEvent(event) {
+        event.preventDefault();
+        event.target.style.msTransform = "scale(1)";
+      }
+      document.querySelector('html').addEventListener("MSGestureChange", handleEvent, false);
+    }
+
+  </script>
+</body>
+
+</html>

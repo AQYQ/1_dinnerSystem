@@ -1,0 +1,14 @@
+stages:
+   - build
+   - test
+   - deploy
+b1:
+  stage: build
+  when: manual
+  script:
+      - ./build.sh
+  after_script:
+      - cd /home/gitlab-runner/builds/NpsnB68h/0/hitecloud/jianguan-front/
+      - scp -i /home/gitlab-runner/.ssh/hitecloud  -r dist/my-app/* root@10.105.71.197:/hhedu/www/jianguan-server/web/kb/
+  tags:
+    - jianguan-server 

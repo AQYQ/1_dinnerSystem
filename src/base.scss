@@ -1,0 +1,40 @@
+
+$browser-default-font-size: 24;
+@function strip-units($number){
+    @return $number / ($number * 0 + 1);
+}
+@function pxtorem($px){
+    @return strip-units($px) / $browser-default-font-size * 1rem;
+}
+@function pxtoremY($px){
+    @return strip-units($px) / $browser-default-font-size * 1.5rem;
+}
+
+@mixin bg-img($imgName,$repeat,$position-x,$position-y) {
+    background-repeat: $repeat;
+    background-position: pxtorem($position-x) pxtorem($position-y);
+    background-image: url('../../../assets/img/'+$imgName);
+}
+@mixin circle($height,$width) {
+    display: inline-table;
+    width: pxtorem($width);
+    height: pxtorem($height);
+    text-align: center;
+    position: relative;
+    font-size: pxtorem(18);
+    cursor: pointer;
+    vertical-align: middle;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(29,39,48,0.20);
+    border-radius: pxtorem(8);
+}
+@mixin ie-scroll() {
+    scrollbar-arrow-color: white; /**//*三角箭头的颜色*/ 
+    scrollbar-face-color: #797C8C; /**//*立体滚动条的颜色*/ 
+    scrollbar-3dlight-color: #797C8C; /**//*立体滚动条亮边的颜色*/ 
+    scrollbar-highlight-color: #797C8C; /**//*滚动条空白部分的颜色*/ 
+    scrollbar-shadow-color: #797C8C; /**//*立体滚动条阴影的颜色*/ 
+    scrollbar-darkshadow-color: #797C8C; /**//*立体滚动条强阴影的颜色*/ 
+    scrollbar-track-color: #1C213B; /**//*立体滚动条背景颜色*/ 
+    scrollbar-base-color:#1C213B; /**//*滚动条的基本颜色*/ 
+}

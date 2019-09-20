@@ -1,0 +1,133 @@
+@import '../../../base.scss';
+.container{
+    position: relative;
+    // overflow-y: auto;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: pxtorem(80);
+    line-height: pxtorem(80);
+    padding-right: 10%;
+    padding-left: 10%;
+}
+header>div{
+    height: pxtorem(80);
+    line-height: pxtorem(80);
+    float: right;
+}
+.warnings{
+    font-size: pxtorem(20);
+    color: red;
+    text-indent: pxtorem(85);
+}
+.input_userName,.input_userPhone{
+    width: 80%;
+    height: pxtorem(60);
+    border: 1px solid #ccc;
+    text-indent: 10px;
+}
+.user_list>div,.user_list_ul{
+    width: 100%;
+}
+.user_name,.user_phone,.user_delete{
+    width: 33.33%;
+    display: inline-block;
+    text-align: center;
+    line-height: pxtorem(80);
+}
+.user_list{
+    width: 80%;
+    margin-left: 10%;
+    height: 84%;
+    .user_header{
+        border-bottom:1px solid #e8e8e8;
+    }
+}
+.user_list>div{
+    background-color: #f7f7f7;
+}
+
+.user_list_ul_box{
+    height: 80%;
+    overflow-y: auto;
+}
+
+.user_list_ul>li{
+    height: pxtorem(80);
+    line-height: pxtorem(80);
+    border-bottom:1px solid #e8e8e8;
+}
+
+.liBtnBox span{
+    cursor: pointer;
+}
+.liBtnBox span:hover{
+    color: #3d3dea;
+}
+
+.user_list_ul>li:hover{
+   background-color: #6bb7f585;
+}
+// .user_list_ul>li:last-of-type{
+//     // border-bottom:1px solid #e8e8e8;
+// }
+.user_list_ul>li>span{
+    display: inline-block;
+    width: 33.33%;
+    text-align: center
+}
+.rightMar{
+    margin-right: 20px;
+}
+.fileBtn{
+    // position: absolute;
+    display: inline-block;
+    top: 10px;
+    height: 31px;
+    left: 0;
+    width: 83px;
+    // background-color: red;
+    position: relative;
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    border-radius: 4px;
+    font-size: pxtorem(20);
+    cursor: pointer;
+    #myfile{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left:0;
+        width: 100%;
+        background-color: blue;
+    }
+    span{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.updateBtn{
+    margin: 0 20px;
+}
+
+.pageDivid{
+    width: 100%;
+    text-align: center;
+    // position: absolute;
+    // bottom: 5%;
+}
+::ng-deep.ant-pagination{
+    margin-top: pxtorem(50);
+    margin-bottom: pxtorem(50);
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/导航/icon_预习复习</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.77156117e-16,2 L5,2 L7,3 L9,1.96428571 L14,2 L14,12 L9,12 L7,13 L4.96829893,12 L7.77156117e-16,12 L7.77156117e-16,2 Z M1,3 L1,11 L5,11 L7,12.0357143 L9,11 L13,11 L13,3 L9,3 L7,4 L5,3 L1,3 Z M7.5,4 L7.5,4 C7.77614237,4 8,4.22385763 8,4.5 L8,11.5 C8,11.7761424 7.77614237,12 7.5,12 L7.5,12 C7.22385763,12 7,11.7761424 7,11.5 L7,4.5 C7,4.22385763 7.22385763,4 7.5,4 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/导航/icon_预习复习" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#3C96FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="颜色/主题色" mask="url(#mask-2)" fill="#3C96FF" fill-rule="nonzero">
+            <rect id="矩形" x="0" y="0" width="14" height="14"></rect>
+        </g>
+    </g>
+</svg>

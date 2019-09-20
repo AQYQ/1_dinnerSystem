@@ -1,0 +1,50 @@
+<!-- <div class="userLog">
+        <div class="titleHeader">
+            <div class="header1">教育BG研发中心</div>
+            <div class="header2">加班管理系统</div>
+        </div>
+    
+        <div class="inputBox">
+            <div class="userName">
+                <span>用户名</span>
+                <input type="text" [(ngModel)]="userName" placeholder="请输入用户名">
+            </div>
+            <div class="password">
+                <span>密码</span>
+                <input type="text" [(ngModel)]="userPassword" placeholder="请输入密码">
+            </div>
+            <div *ngIf="isShow" class="titleDiv">
+                账号或密码错误
+            </div>
+        </div>
+    
+        <div class="btnBox">
+            <button nz-button nzType="primary" nzBlock (click)="goLoginPc()">登录</button>
+        </div>
+    </div> -->
+
+<div class="userLog">
+    <div class="titleHeader">
+        <div class="header1">管理端</div>
+        <div class="header2">加班管理系统</div>
+    </div>
+
+    <div class="inputBox">
+        <div class="userName">
+            <input type="text" [(ngModel)]="userName" placeholder="请输入手机号">
+        </div>
+        <div class="password">
+            <input type="password" [(ngModel)]="userPassword" placeholder="请输入密码">
+        </div>
+    </div>
+
+    <div class="storageWord green" (click)="clickStrWord()">
+        <span class="storageImg"><i nz-icon [nzType]="'check-circle'"></i></span>
+        <span class="storageTxt">记住密码</span>
+    </div>
+
+    <div class="btnBox">
+        <!-- <button nz-button nzType="primary" nzBlock (click)="goLogin()">登录</button> -->
+        <span class="goLoginBtn" (click)="goLoginPc()">登录</span>
+    </div>
+</div>

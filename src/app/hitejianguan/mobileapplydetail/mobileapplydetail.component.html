@@ -1,0 +1,66 @@
+<div class="detail">
+  <div class="detailCenter" *ngIf="!load">
+    <!-- 头 -->
+    <header class="detail_header">
+      <!--通过路由返回加班列表页-->
+      <a (click)="goBack()">&lt;返回</a>
+      <span class="SQJB">申请加班</span>
+    </header>
+
+    <!--加班日期部分-->
+    <div class="detail_date">
+      <input type="text" readonly value="加班日期" class="detail_date_input1">
+      <!--加班日期不可修改-->
+      <input type="text" readonly class="detail_date_input2" [(ngModel)]="myDate">
+    </div>
+
+    <!--加班时段部分-->
+    <div class="detail_time_pick">
+      <input type="text" readonly value="加班时段" class="detail_time_pick1">
+      <!--第1个时间选择框插件-->
+      <!--利用[(ngModel)] 和 [nzFormat] 两个属性控制插件默认显示  17：30-->
+      <nz-time-picker [(ngModel)]="time1" (ngModelChange)="log1()" [nzFormat]="timeFormat"
+        class="detail_time_pick2"></nz-time-picker>
+
+      <div class="detail_time_pick3">—</div>
+
+      <!--第2个时间选择框插件-->
+      <!--利用[(ngModel)] 和 [nzFormat] 两个属性控制插件默认显示  21：00-->
+      <nz-time-picker [(ngModel)]="time2" (ngModelChange)="log2()" [nzFormat]="timeFormat"
+        class="detail_time_pick2"></nz-time-picker>
+    </div>
+
+    <!--加班事由部分-->
+    <div class="detail_cause">
+      <input type="text" readonly value="加班事由" class="detail_cause_input1">
+      <!--文本域   加班事由不能为空    若为空  调用方法警告-->
+      <textarea placeholder="输入内容" maxlength="30" class="detail_cause_input2" [(ngModel)]="cause"></textarea>
+    </div>
+
+    <!--是否订餐部分-->
+    <div class="detail_food">
+      <span>是否订餐</span>
+      <!--获取订餐列表  拿不到数据  的文本提示-->
+      <i *ngIf="isShow" class="food_isShow">还未添加餐饮</i>
+      <!--“是否订餐”按钮的 开关插件  [(ngModel)]指定是否选中 
+          点击时调用方法——判断是否已订餐-->
+      <nz-switch [(ngModel)]="switchValue" class="detail_food_check" (click)="isconfirm()"></nz-switch>
+    </div>
+
+    <!--菜单列表-->
+    <div class="show" *ngIf="switchValue">
+      <ul>
+        <li (click)="check_fun(item.m_id)" *ngFor="let item of menuList,let i = index;">
+          {{item.m_name}}
+          <i nz-icon [nzType]="'check'" *ngIf="item.m_id === foodid" class="check_icon"></i>
+        </li>
+      </ul>
+    </div>
+
+    <!--提交申请按钮-->
+    <button nz-button nzType="primary" type="submit" class="subMit" (click)="applyOvertime()">提交申请</button>
+  </div>
+  <div class="loadingContainer" *ngIf="load">
+      <nz-spin nzSimple [nzSize]="large"></nz-spin>
+  </div>
+</div>

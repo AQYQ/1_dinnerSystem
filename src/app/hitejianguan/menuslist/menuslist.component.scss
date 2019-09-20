@@ -1,0 +1,25 @@
+.editable-tag {
+  background: rgb(255, 255, 255);
+  border-style: dashed;
+}
+.menuslist_apply{
+  width:100%;
+  height: 100%;
+  background-color: rgba(240, 242, 245, 1);
+  padding: 102px;
+  .menuslist_content{
+    background-color: #fff;
+    padding: 100px;
+    .tags{
+      line-height: 47px;
+      text-align: center;
+      font-size: 22px;
+      margin: 0 16px 21px;
+    }
+    input{
+      height: 47px;
+      line-height: 47px;
+      margin: 0 16px 21px;
+    }
+  }
+}

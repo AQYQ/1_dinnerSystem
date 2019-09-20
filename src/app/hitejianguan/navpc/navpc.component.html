@@ -1,0 +1,16 @@
+<div style="padding: 0 10%;">
+    <ul nz-menu nzMode="horizontal" class="navpc">
+        <li class="navLi user" nz-menu-item nzMatchRouter>
+            <a href="JavaScript:;" (click)="routerClick('user')">用户管理</a>
+        </li>
+        <li class="navLi statis" nz-menu-item nzMatchRouter>
+            <a href="JavaScript:;" (click)="routerClick('statis')">统计</a>
+        </li>
+        <li class="navLi menus" nz-menu-item nzMatchRouter>
+            <a href="JavaScript:;" (click)="routerClick('menus')">添加菜单</a>
+        </li>
+    </ul>
+    <div class="userMar">
+        <nz-avatar nzIcon="user"></nz-avatar><span>{{userName}}</span>
+    </div>
+</div>

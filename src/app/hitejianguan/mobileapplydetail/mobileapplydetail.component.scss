@@ -1,0 +1,375 @@
+@import '../../../base.scss';
+
+.detail{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(50,50,50,0.1);
+    text-align: center;
+    overflow-y: auto;
+}
+input::-webkit-input-placeholder{
+    color:gray;
+}
+
+.detail_header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white;
+    text-align: center;
+}
+.detail_header span.SQJB{
+    font-size: 24px;
+}
+.detail_header>a{
+    position: absolute;
+    top:0;
+    left: 5%;
+    font-size: 18px;
+    color:#7979e1;
+}
+.detail_header>span{
+    // width: pxtorem(160);
+    // font-size: pxtorem(120);
+}
+
+.detail_date{
+    width: 100%;
+    height: 50px;
+    margin-top: 16px;
+    background-color: white;
+    padding-left: 5%;
+}
+.detail_date_input1{
+    width: 25%;
+    height: 100%;
+    font-size: 18px;
+    float: left;
+    // padding-left: pxtorem(20); 
+}
+.detail_date_input2{
+    width: 75%;
+    height: 100%;
+    font-size: 18px;
+    float: left;
+    text-indent: pxtorem(33);
+}
+
+.detail_time_pick{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 16px;
+    background-color: white;
+    padding-left: 5%;
+}
+.detail_time_pick1{
+    width: 25%;
+    height: 100%;
+    font-size: 18px;
+    float: left;
+    // padding-left: pxtorem(20); 
+}
+.detail_time_pick2{
+    width: 21%;
+    height: 100%;
+    float: left;
+    // border:none;
+}
+.detail_time_pick3{
+    width: 5%;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+}
+::ng-deep .ant-time-picker-icon{
+    display: none;
+}
+::ng-deep .ant-time-picker-input{
+    font-size: 18px;
+    border:none;
+}
+::ng-deep .ng-pristine.ant-time-picker-input{
+    height: 100%;
+    text-align: center;
+}
+
+.detail_cause{
+    width: 100%;
+    height: 150px;
+    margin-top: 16px;
+    background-color: white;
+    padding-left: 5%;
+}
+.detail_cause_input1{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+.detail_cause_input2{
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    border: none;
+    // text-indent: 30px;
+    line-height: 20px;
+    padding-left: 30px;
+}
+
+.detail_food{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+.detail_food>span{
+    float: left;
+    height: 100%;
+    font-size: 18px;
+}
+.detail_food_check{
+    float: right;
+}
+.food_isShow{
+    color:red;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.show{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-left: 5%;
+}
+.show>ul{
+    width: 90%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: pxtorem(90);
+}
+.show>ul>li{
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    display: inline-block;
+    padding-left: 3%;
+    padding-top:5%; 
+    padding-bottom:5%; 
+}
+.check_icon{
+    float: right;
+    color:blue; 
+    font-size: pxtorem(80);
+    margin-right: 7%;
+}
+.show>ul>li:last-of-type{
+    border:none; 
+}
+
+.subMit{
+    width: 90%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.loadingContainer{
+    text-align: center;
+    // background: rgba(0, 0, 0, 0.05);
+    // background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    padding-top: 70%;
+}
+
+
+// .detail{
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     background-color:rgba(50,50,50,0.1);
+//     text-align: center;
+//     overflow-y: auto;
+// }
+// input::-webkit-input-placeholder{
+//     color:gray;
+// }
+
+// .detail_header{
+//     width: 100%;
+//     height: pxtorem(150);
+//     line-height: pxtorem(150);
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     background-color: white;
+//     text-align: center;
+// }
+// .detail_header>a{
+//     position: absolute;
+//     top:0;
+//     left: 5%;
+//     font-size: pxtorem(100);
+//     color:rgb(71, 71, 240);
+// }
+// .detail_header>span{
+//     width: pxtorem(160);
+//     font-size: pxtorem(120);
+// }
+
+// .detail_date{
+//     width: 100%;
+//     height: pxtorem(120);
+//     margin-top: pxtorem(50);
+//     background-color: white;
+//     padding-left: 5%;
+// }
+// .detail_date_input1{
+//     width: 25%;
+//     height: 100%;
+//     font-size: pxtorem(90);
+//     float: left;
+//     padding-left: pxtorem(20); 
+// }
+// .detail_date_input2{
+//     width: 75%;
+//     height: 100%;
+//     font-size: pxtorem(90);
+//     float: left;
+//     text-indent: pxtorem(33);
+// }
+
+// .detail_time_pick{
+//     width: 100%;
+//     height:pxtorem(120);
+//     line-height: pxtorem(120);
+//     margin-top: pxtorem(50);
+//     background-color: white;
+//     padding-left: 5%;
+// }
+// .detail_time_pick1{
+//     width: 25%;
+//     height: 100%;
+//     font-size: pxtorem(90);
+//     float: left;
+//     padding-left: pxtorem(20); 
+// }
+// .detail_time_pick2{
+//     width: 21%;
+//     height: 100%;
+//     float: left;
+//     // border:none;
+// }
+// .detail_time_pick3{
+//     width: 5%;
+//     height: 100%;
+//     float: left;
+//     line-height: pxtorem(120);
+// }
+// ::ng-deep .ant-time-picker-icon{
+//     display: none;
+// }
+// ::ng-deep .ant-time-picker-input{
+//     font-size: pxtorem(90);
+//     border:none;
+// }
+// ::ng-deep .ng-pristine.ant-time-picker-input{
+//     height: 100%;
+//     text-align: center;
+// }
+
+// .detail_cause{
+//     width: 100%;
+//     height: pxtorem(300);
+//     margin-top: pxtorem(50);
+//     background-color: white;
+//     padding-left: 5%;
+// }
+// .detail_cause_input1{
+//     width: 100%;
+//     height: pxtorem(100);
+//     font-size: pxtorem(90);
+//     padding-left: pxtorem(20); 
+// }
+// .detail_cause_input2{
+//     width: 100%;
+//     height: pxtorem(200);  
+//     font-size: pxtorem(60);
+//     padding-left: pxtorem(20);
+//     border:none;
+//     text-indent: 2em;
+// }
+
+// .detail_food{
+//     width: 100%;
+//     height: pxtorem(100);
+//     margin-top: pxtorem(50);
+//     background-color: white;
+//     padding-left: 5%;
+//     padding-right: 10%;
+//     line-height: pxtorem(100);
+// }
+// .detail_food>span{
+//     float: left;
+//     height: 100%;
+//     font-size: pxtorem(90);
+// }
+// .detail_food_check{
+//     float: right;
+// }
+// .food_isShow{
+//     color:red;
+//     font-size: pxtorem(2);
+//     font-style: normal;
+// }
+
+// .show{
+//     margin-top: pxtorem(20);
+//     width: 100%;
+//     background-color: white;
+//     text-align: center;
+//     padding-left: 5%;
+// }
+// .show>ul{
+//     width: 90%;
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     text-align: left;
+//     font-size: pxtorem(90);
+// }
+// .show>ul>li{
+//     border-bottom: 1px solid #ccc;
+//     width: 100%;
+//     display: inline-block;
+//     padding-left: 3%;
+//     padding-top:5%; 
+//     padding-bottom:5%; 
+// }
+// .check_icon{
+//     float: right;
+//     color:blue; 
+//     font-size: pxtorem(80);
+//     margin-right: 7%;
+// }
+// .show>ul>li:last-of-type{
+//     border:none; 
+// }
+
+// .subMit{
+//     width: 90%;
+//     height: pxtorem(100);
+//     margin-top: pxtorem(50);
+// }

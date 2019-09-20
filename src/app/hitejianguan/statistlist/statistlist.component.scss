@@ -1,0 +1,43 @@
+@import '../../../base.scss';
+.statistic_apply{
+    width:100%;
+    height: 100%;
+    // background-color: rgba(240, 242, 245, 1);
+    padding: 0 10%;
+    overflow-y: auto;
+    .statistic_content{
+        background-color: #fff;
+        .statistic_table{
+            padding: 40px 0;
+            .statistic_title{
+                border-bottom:1px solid #e8e8e8;
+                // margin: 0 10%;
+                width: 100%;
+                background-color: #f7f7f7;
+                span{
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 64px;
+                    width: 33.3%;
+                }
+            }
+            .statistic_content{
+                li:hover {
+                    background-color: #6bb7f585;
+                }
+                li{
+                    cursor: pointer;
+                    border-bottom:1px solid #e8e8e8;
+                    // margin: 0 10%;
+                    width: 100%;
+                    span{
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 64px;
+                        width: 33.3%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/导航/icon_作业</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-2.27373675e-13,0 L10,0 L10,14 L-2.27373675e-13,14 L-2.27373675e-13,0 Z M1,3 L1,13 L9,13 L9,3 L1,3 Z M7,6 C7.19277344,5.80722656 7.503125,5.80722656 7.69453125,6.00136719 C7.88730469,6.19277344 7.88730469,6.50449219 7.69589844,6.69726562 L4.3457141,9.77175338 C4.34434692,9.77312057 4.34161254,9.77585495 4.34024535,9.77722213 C4.30743285,9.81276901 4.26778442,9.84284713 4.22403442,9.8688237 C4.14747192,9.9125737 4.06407348,9.93308151 3.98067504,9.93308151 C3.8097766,9.93308151 3.64297973,9.84284713 3.55274535,9.68425338 L2.14550781,7.48808594 C2.01015625,7.2515625 2.0921875,6.95214844 2.32871094,6.81679687 C2.56523438,6.68144531 2.86464844,6.76347656 3,7 L4.08731567,8.63562057 L7,6 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/导航/icon_作业" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="颜色/666" transform="translate(2.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="合并形状" fill="#D8D8D8" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="颜色/主题色" mask="url(#mask-2)" fill="#3C96FF" fill-rule="nonzero">
+                <g transform="translate(-2.000000, 0.000000)" id="矩形">
+                    <rect x="0" y="0" width="14" height="14"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

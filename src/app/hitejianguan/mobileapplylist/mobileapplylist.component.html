@@ -1,0 +1,64 @@
+<div class="applylist">
+    <p class="list-header">
+        <span (click)='amendPassWord()'>{{userName}}</span>
+        <span class="system">加班系统</span>
+        <span class="apply" (click)="clickJiaban()">申请加班</span>
+    </p>
+    <ul>
+        <!-- <li class="list-center" *ngFor="let msg of content">
+            <p>时间：{{msg.o_time* 1000 | date:'yyyy-MM-dd'}}
+                <span class="spanBtnBox" *ngIf="!isYes">
+                    <span *ngIf="msg.o_status == '0'" (click)="delestatus(msg.o_id)">取消</span>
+                    <span *ngIf="msg.o_status == '0'" (click)="xiugai(msg.o_id)">修改</span>
+                    <span *ngIf="msg.o_status == '1'">已完成</span>
+                    <span *ngIf="msg.o_status == '2'">已取消</span>
+                </span>
+            </p>
+            <p class="line"></p>
+            <p>订餐：{{msg.o_food_name  || '未订餐'}}</p>
+            <p>事由：{{msg.o_cause}}</p>
+        </li> -->
+
+        <li class="list-center" *ngFor="let msg of content">
+            <div class="list_heard">
+                <span class="">
+                    时间：{{msg.o_time* 1000 | date:'yyyy-MM-dd'}}
+                </span>
+                <span class="spanBtnBox" *ngIf="!isYes">
+                    <span *ngIf="msg.o_status == '0'" (click)="delestatus(msg.o_id)">取消</span>
+                    <!--0--可以取消申请或修改申请-->
+                    <span *ngIf="msg.o_status == '0'" (click)="xiugai(msg.o_id)">修改</span>
+                    <span *ngIf="msg.o_status == '1'">已完成</span>
+                    <!--1--申请已经完成-->
+                    <span *ngIf="msg.o_status == '2'">已取消</span>
+                </span>
+            </div>
+            <div class="list_food_name">
+                订餐：{{msg.o_food_name  || '未订餐'}}
+            </div>
+            <div class="list_bottom">
+                <span class="titleSY">事由：</span>
+                <span class="titleCa">{{msg.o_cause}}</span>
+            </div>
+        </li>
+    </ul>
+    <!-- <button class="password">修改密码</button> -->
+    <!-- <button nz-button nzType="primary" class="password" (click)="update_password()">修改密码</button> -->
+    <!-- <button nz-button [nzType]="'primary'" (click)="update_password()" class="password"><span>修改密码</span></button> -->
+    <!-- <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input type="password" nz-input formControlName="password" placeholder="新密码" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+          <nz-input-group nzPrefixIcon="lock">
+            <input type="password" nz-input formControlName="password" placeholder="确认密码" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </form> -->
+</div>

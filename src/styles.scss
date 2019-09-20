@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* 清除默认样式 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    font-family: '微软雅黑';
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+::-ms-clear,::-ms-reveal{display:none;}
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    background: none;
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select:none;
+    -webkit-user-select: none;
+    font-family: "microsoft yahei","Heiti";
+}
+input,textarea {
+    font-family: "microsoft yahei","Heiti";
+}
+
+
+.clearfix{
+  *zoom:1;
+}
+.clearfix:after{
+  display:block;
+  overflow:hidden;
+  clear:both;
+  height:0;
+  visibility:hidden;
+  content:".";
+}
+*:focus {
+    outline: none;
+}
+
+.backHomeDiv{
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #767676;
+  height: 2.58rem;
+  line-height: 2.58rem;
+  outline: none;
+}
+.backHomeDiv span {
+  font-size: 1rem;
+}
+
+.mfrompc .backHomeDiv:hover span {
+  color: #2196f3;
+}
+
+span.planTd{
+    display:inline-block;
+    width:94%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.invit_web_con #code img {
+width: 5rem;
+height: 5rem;
+}
+.invit_web_con #codeWechat img {
+width: 6rem;
+height: 6rem;
+}
+.webShareCon #courseLiveCode img {
+width: 6rem;
+height: 6rem;
+border: 8px solid #1890ff;
+border-radius: 8px;
+box-sizing: border-box;
+margin: auto;
+}
+.mb_invit_con #mobileCode img {
+width: 5rem;
+height: 5rem;
+}
+.content_code #code img{
+    width:9.16rem;
+    height:9.16rem;
+    // margin: 0 auto;
+}
+.mbsc-fr {
+z-index: 10001;
+}
+
+
